@@ -2,12 +2,12 @@ import numpy as np
 import math
 
 def myQuatSlerp(q, t, h): #cutety
-    omega = np.arccos(np.dot(q, t))
+    omega = math.acos(np.dot(q, t))
 
     acc_q = q*np.sin((1-h)*omega)
     mag_q = t*np.sin(h*omega)
 
-    q_intpl = (acc_q + mag_q) / np.sin(h)
+    q_intpl = (acc_q + mag_q) / np.sin(omega)
 
     return q_intpl
 
