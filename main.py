@@ -45,17 +45,14 @@ magn_inert = np.zeros((data_n, 3))
 
 qg = np.zeros((data_n, 4))  # purely read from gyro.
 qg[-1] = [0, 0, 0, 1]
-qg[0] = [0, 0, 0, 1]
 dq_g = np.zeros((data_n, 4))
 
 qg_a = np.zeros((data_n, 4))
 qg_a[-1] = [0, 0, 0, 1]
-qg_a[0] = [0, 0, 0, 1]
 dq_ga = np.zeros((data_n, 4))
 
 qg_m = np.zeros((data_n, 4))
 qg_m[-1] = [0, 0, 0, 1]
-qg_m[0] = [0, 0, 0, 1]
 dq_gm = np.zeros((data_n, 4))
 
 slerp_m = np.zeros((data_n, 4));
